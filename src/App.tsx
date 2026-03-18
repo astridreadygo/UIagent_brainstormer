@@ -453,7 +453,7 @@ export default function UIAgentBrainstormer() {
         <div
           style={{
             display: 'grid',
-            gridTemplateColumns: 'repeat(4, 1fr)',
+            gridTemplateColumns: "repeat(auto-fit, minmax(160px, 1fr))",
             gap: 16,
             marginBottom: 32,
           }}
@@ -700,6 +700,7 @@ export default function UIAgentBrainstormer() {
                 display: 'flex',
                 justifyContent: 'space-between',
                 alignItems: 'center',
+                flexWrap: "wrap", gap: "8px",
                 marginTop: 12,
               }}
             >
