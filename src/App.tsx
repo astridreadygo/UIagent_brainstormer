@@ -453,7 +453,9 @@ export default function UIAgentBrainstormer() {
         <div
           style={{
             display: 'grid',
-            gridTemplateColumns: "repeat(auto-fit, minmax(160px, 1fr))",
+            gridTemplateColumns: window.innerWidth < 600 
+              ? "repeat(2, 1fr)" 
+              : "repeat(4, 1fr)",
             gap: 16,
             marginBottom: 32,
           }}
@@ -493,7 +495,7 @@ export default function UIAgentBrainstormer() {
                 <div
                   style={{
                     perspective: '1000px',
-                    height: 220,
+                    height: window.innerWidth < 600 ? 260 : 220,
                     position: 'relative',
                   }}
                 >
