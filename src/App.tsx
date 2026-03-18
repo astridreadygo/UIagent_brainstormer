@@ -493,7 +493,7 @@ export default function UIAgentBrainstormer() {
                 <div
                   style={{
                     perspective: '1000px',
-                    height: 180,
+                    height: 220,
                     position: 'relative',
                   }}
                 >
@@ -557,6 +557,10 @@ export default function UIAgentBrainstormer() {
                                 fontSize: 12,
                                 color: '#64748b',
                                 lineHeight: 1.6,
+                                overflow: 'hidden',
+                                display: '-webkit-box',
+                                WebkitLineClamp: 4,
+                                WebkitBoxOrient: 'vertical',
                               }}
                             >
                               {card.desc}
